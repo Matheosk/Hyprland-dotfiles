@@ -1,2 +1,2 @@
-# dotfiles
-My Arch/Hyprland dotfiles
+# Matheosk's dotfiles
+## hola
