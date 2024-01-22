@@ -1,0 +1,70 @@
+{
+	"layer": "top",
+	"spacing": 10,
+	"height": 15,
+	"modules-left": ["hyprland/workspaces","hyprland/window"],
+	"modules-center": ["clock"],
+	"modules-right": ["tray","cpu","memory","pulseaudio","battery","network","bluetooth","custom/logout"],
+
+	"hyprland/workspaces": {
+		  "format": "{icon}",
+		  "format-icons": {
+			"default": "󰊠",
+			"active": "󰮯",
+			"empty": ""
+		  },
+		  "persistent-workspaces": {
+			"*": 5
+		  },
+	},
+
+	"hyprland/window": {
+		"format": "  >> {}",
+		"max-length": 30
+	},
+
+	"clock": {
+		"format": "{:%H:%M   %d/%m 󰸗 }"
+	},
+
+	"tray":{
+		"icon-size": 21,
+		"spacing": 10
+	},
+
+	"cpu": {
+		"format": " {usage}%"
+	},
+
+	"memory": {
+		"format": " {}%"
+	},
+
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": " 󰸈  ",
+		"format-icons": ["󰕿","󰖀","󰕾"]
+	},
+
+	"battery": {
+		    "format": "{icon}  {capacity}%",
+			"format-icons": ["", "", "", "", ""],
+	},
+
+	"network": {
+		"format": "󰖩",
+		"format-disconnected": "󰖪",
+		"on-click": "kitty nmtui"
+	},
+
+	"bluetooth": {
+		"format": "󰂯",
+		"format-off": "󰂲",
+		"on-click": "kitty bluetuith"
+	},
+
+	"custom/logout": {
+		"format": "󰍃",
+		"on-click": "~/.config/rofi/powermenu/powermenu.sh"
+	}
+}

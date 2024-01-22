@@ -1,0 +1,11 @@
+colorscheme gruvbox-warm
+colorscheme gruvbox-alt
+colorscheme gruvbox
+q
+set mouse=true
+help
+helṕ
+set format_statusline 
+help 
+bind -f common ] vol +0 +1%
+add ~/Música/
